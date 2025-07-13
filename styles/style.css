@@ -363,5 +363,15 @@ main {
         /* bottom: 2000px; */
         margin-top: 30px;
     }
+    /* facts style  */
+.facts-card-container{    grid-template-columns: repeat(2,1fr);
+    /* margin: 0px auto; */
+    /* width: 100%; */
+    margin-left: 130px;
+    gap: 30px;
+}
+.facts{
+    text-align: center;
+}
 
 }
