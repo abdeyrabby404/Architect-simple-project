@@ -13,6 +13,9 @@
     margin: 0;
     padding: 0;
 }
+.hide{
+    display: none;
+}
 
 .bg-color {
     background-color: rgba(255, 144, 14, 0.1);
@@ -136,6 +139,7 @@ main {
 .love{
     display: flex;
     gap: 150px;
+    height: 1059px;
 }
 .love-info{
         margin-top: 62px;
@@ -164,23 +168,71 @@ main {
 .love-card-title{
     font-size: 1.2rem;
 }
+.p-btn-2 {
+    background-color: #FF900E;
+    /* font-size: 4rem; */
+    font-weight: bold;
+    color: white;
+    padding: 46px;
+    border-radius: 8px;
+    border: none;
+    /* cursor: pointer; */
+    width: 342px;
+    height: 200px;
+}
 
+.exp-btn{
+    text-align: center;
+    position: relative;
+    left: 100px;
+    bottom: 150px;
+    margin-left: 54px;
+}
+.exp-btn-title{
+    font-size: 4rem;
+}
+.exp-btn-subtitle{
+    font-size: 25rem;
+}
+/* facts section style  */
+.facts{
+    margin-bottom: 130px;
+}
+.facts-card{
+    border: 1px solid orange;
+    width: 242px;
+    height: 242px;
+    justify-content: center;
+    align-items: center;
+}
+.facts-card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.facts-title{
+    color: rgba(66, 66, 66, 1);
+    font-size: 2.8rem;
+}
+.facts-subtitle{
+    color: rgba(114, 114, 114, 1);
+    font-size: 1.2rem;
+    font-weight: 600px;
+}
 
 /* responsive style  */
 
 /* small device  */
 @media screen and (max-width: 576px) {
-
     /* banner section  */
-    .banner {
+    /* .banner {
         width: calc((100 - 20px)/2);
-    }
+    } */
 
     .banner-info {
         margin-top: 30px;
     }
 
-    .banner img {
+    .banner-img{
         width: 100%;
 
     }
@@ -189,6 +241,7 @@ main {
         flex-direction: column;
         gap: 20px;
     }
+
 
 
 /* Features section  */
@@ -202,7 +255,44 @@ main {
         width: 400px;
         text-align: center;
     }
+/* love section style  */
+    .love{
+        flex-direction: column;
+        height: 100%;
+        padding-right: 0px;
+    }
+    .love-info{
+        width: 100%;
+    }
+    .love-card{
+        width: 80%;
+    }
+    .love-image{
+        margin-top: 50px;
+        /* margin: 0 auto; */
+        
+    }
+    .love-image img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .exp-btn{
+        display: none;
+        position:static ;
+        text-align: left;
+        bottom: 500px;
+    }
 
+/* facts style  */
+.facts-card-container{    grid-template-columns: repeat(1,1fr);
+    /* margin: 0px auto; */
+    /* width: 100%; */
+    margin-left: 130px;
+    gap: 30px;
+}
+.facts{
+    text-align: center;
+}
 
 }
 
@@ -245,4 +335,33 @@ main {
     .features-images{
        text-align: center;
     }
+
+    /* love section style  */
+    .love{
+        flex-direction: column;
+        width: 100%;
+    }
+    .love-info{
+        width: 100%;
+    }
+    .love-card{
+        width: 80%;
+    }
+    .love-image{
+        margin-top: 50px;
+        /* margin-bottom: 50px; */
+        /* margin: 0 auto; */
+        
+    }
+    .love-image img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .exp-btn{
+        position: relative;
+        text-align: left;
+        /* bottom: 2000px; */
+        margin-top: 30px;
+    }
+
 }
