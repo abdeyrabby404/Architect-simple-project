@@ -219,6 +219,9 @@ main {
     font-weight: 600px;
 }
 /* sponsor logo section  */
+.sponsors{
+    margin-bottom: 130px;
+}
 .sponsors-logo-container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -306,10 +309,16 @@ main {
     text-align: center;
 }
 /* sponsor logo section  */
+/* sponsor logo section  */
+.sponsorsss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sponsors-logo-container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    gap: 30px;
+    gap: 50px;
 }
 
 }
